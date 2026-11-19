@@ -4,6 +4,8 @@
 
 首个公开版本。
 
+- Release: https://github.com/YusenZhang0601/living-project/releases/tag/v1.0.0
+
 **方法论**
 - 三条关系：骨架与血肉、分支与整体、生成性（代谢）
 - 文档四类判据（参考 / 解释 / 操作 / 教程），治「混写」
