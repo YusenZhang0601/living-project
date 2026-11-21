@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v2.0.0 — 2026-11-21
+
+仓库从「一个技能」变成「技能包」，改名 `tony-skills`（原 `living-project`）。
+
+**Breaking**
+- 技能移到 `skills/project-maintenance/`；`install.sh` 改为多技能安装，路径全变
+- 技能更名：`living-project` → `project-maintenance`（项目维护）
+- 旧链接会重定向到新仓库名，但仓库内路径不重定向
+
+**新增**
+- `skills/drift-check/` · 漂移检查：审计单位是「方向」而不是「改动」。根由人给不由仓读；按根/推导/冻结/孤儿清点工作；量配比；五类漂移源；只停一件；给一条穿过根的竖切；附同类技能调研
+- `install.sh` 支持选装、`--link`、`--force`，技能根加入 OpenCode 与 Agent Skills 规范目录
+
+**验证**
+- 两个技能都由宿主实际加载过一次（frontmatter 合法、可被发现）
+
 ## v1.0.0 — 2026-11-19
 
 首个公开版本。
