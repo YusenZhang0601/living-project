@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- 移除 `install.sh`。仓库维护 Skill 本体和索引，各 Agent 按宿主自己的方式添加和更新 Skill。
+- 首页索引直接链接每个 `SKILL.md`，并提供临时使用与长期添加的说明。
+
 ## v2.0.0 — 2026-11-21
 
 仓库从「一个技能」变成「技能包」，改名 `tony-skills`（原 `living-project`）。

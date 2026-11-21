@@ -5,7 +5,6 @@
 *An agent skill that turns a messy repository into a living, self-growing project — skeleton and flesh, branches and whole, metabolism and handoff.*
 
 ![Agent Skill](https://img.shields.io/badge/agent%20skill-SKILL.md-000000)
-![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20·%20Codex%20·%20DSH%20·%20any%20SKILL.md%20host-4B5563)
 ![License](https://img.shields.io/badge/license-MIT-16A34A)
 
 ---
@@ -79,39 +78,11 @@
 换形态就换形状：交付型常是模块目录 + 每模块一份 `STATE.md`；内容型常是主题目录加篇目清单。
 **先定形态与分支切法，让目录长出来；不要先画目录再往里塞东西。**
 
-## 装（三种宿主，一个目录）
+## 在你的 Agent 里使用
 
-技能就是一个目录 + 一个 `SKILL.md`，放进宿主扫描的技能根即可：
+把 [SKILL.md](SKILL.md) 交给 Agent，临时使用或按当前宿主的方式长期添加。具体用法见 [仓库首页](../../README.md#在你的-agent-里使用)。
 
-```bash
-git clone https://github.com/<you>/tony-skills.git tony-skills
-./tony-skills/install.sh                 # 装包里全部技能
-./tony-skills/install.sh project-maintenance   # 只装一个
-```
-
-一键脚本会自动找已存在的技能根（`~/.config/opencode/skills`、`~/.claude/skills`、`~/.dsh/skills`、`~/.agents/skills`），复制而不是软链；要软链加 `--link`。
-
-装完**确认它在宿主的技能目录里真的出现了**——指针存在不等于技能可达，这条教训写在技能里。
-
-## 用：三种触发方式
-
-| 方式 | 怎么写 | 要不要打技能名 |
-|---|---|---|
-| **自然语言（推荐）** | 「把这项目治理一下」「收口」「对齐进度」「交班」 | 不用 |
-| 显式调用 | `/project-maintenance`（一般支持补全） | 要 |
-| 短别名 | 见下 | 一条短命令 |
-
-技能名长短不影响日常触发——模型按 `description` 匹配自然语言。嫌长就给自己加一个短命令：
-
-```markdown
-<!-- 存成 .claude/commands/lp.md -->
----
-description: 收口本项目（加载 project-maintenance 技能并按六动作走）
----
-加载 project-maintenance 技能，按它的六动作收口本项目；输出固定六段，最后跑项目门禁。
-```
-
-之后 `/lp` 就等于完整流程。短命令归你，可查的品牌名归仓库。
+可以直接说「把这项目治理一下」「收口」「对齐进度」或「交班」。也可以按宿主支持的方式显式调用 `project-maintenance`。
 
 ## 它会给你什么
 
