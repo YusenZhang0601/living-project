@@ -9,8 +9,8 @@
 
 | 技能 | 一句话 | 什么时候用 |
 |---|---|---|
-| **[project-maintenance](skills/project-maintenance/SKILL.md)** · 项目维护 | 整理项目结构，让新会话能从现状接着做 | 项目变乱、要开工立骨架、要交班、要收口复盘 |
-| **[drift-check](skills/drift-check/SKILL.md)** · 漂移检查 | 检查近期工作是否还在推进原目标，提出一项可停的工作和一个可验证的下一步 | 怀疑跑偏了、方向对不对、阶段该不该继续 |
+| **[project-maintenance](skills/project-maintenance/SKILL.md)** · 项目维护 | 让接手者找到可靠的现状和下一步 | 状态散落、反复难接手、明确要求项目交接或治理 |
+| **[drift-check](skills/drift-check/SKILL.md)** · 漂移检查 | 用近期工作的证据判断方向，给出一个可验证的下一步 | 怀疑跑偏了、解释不了关键进展、要决定一项工作是否继续 |
 
 两个技能分工明确：**项目维护管「结构乱」，漂移检查管「方向偏」。**
 
@@ -26,7 +26,7 @@
 
 - 新技能放在 `skills/<name>/SKILL.md`，文件头的 `name` 和目录同名，并同步更新上面的技能索引。
 - **`description` 写清什么时候用。** 用用户会说的原话（「跑偏了」「治理一下」「回头看一眼」）帮助 Agent 找到技能。
-- **正文 < 5k token。** 重货放 `references/`，按需加载。
+- 正文保留实际执行所需的判断和步骤。示例和参考资料按需读取。
 - **技能与具体项目无关。** 路径、命令、字段归项目自己，写进项目的入口协议。
 
 更多维护约定见 [CONTRIBUTING.md](CONTRIBUTING.md)，变更记录见 [CHANGELOG.md](CHANGELOG.md)。
